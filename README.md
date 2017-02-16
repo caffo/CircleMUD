@@ -1,6 +1,6 @@
 # OSX compatible CircleMUD 
 
-This branch is supposed to always properly compile under OSX. It was latest tested in MacOS Sierra. From root directory, run:
+This fork is supposed to always properly compile under OSX. It was latest tested in MacOS Sierra. From root directory, run:
 
 ```
 $ compile; cd src; make;
