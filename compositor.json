@@ -1,0 +1,94 @@
+{
+  "name": "caffo/CircleMUD",
+  "version": "0.1.4",
+  "libraries": {
+    "xv": "^1.1.25"
+  },
+  "title": "",
+  "branch": "",
+  "style": {
+    "name": "Brutalist",
+    "componentSet": {
+      "nav": "nav/BasicNav",
+      "header": "header/BasicHeader",
+      "article": "article/MarkdownArticle",
+      "footer": "footer/BasicFooter"
+    },
+    "fontFamily": "Consolas, \"Liberation Mono\", Menlo, Courier, monospace",
+    "heading": {},
+    "typeScale": [
+      48,
+      32,
+      20,
+      18,
+      16,
+      14,
+      12
+    ],
+    "layout": {
+      "maxWidth": 1024,
+      "fluid": true
+    },
+    "colors": {
+      "text": "#333",
+      "background": "#fff",
+      "primary": "#666",
+      "secondary": "#888",
+      "highlight": "#1f80ff",
+      "muted": "#f6f6f6",
+      "border": "#eee"
+    }
+  },
+  "content": [
+    {
+      "component": "nav",
+      "links": [
+        {
+          "href": "http://circlemud.org",
+          "text": "Home"
+        },
+        {
+          "href": "https://github.com/caffo/CircleMUD",
+          "text": "GitHub"
+        }
+      ]
+    },
+    {
+      "component": "header",
+      "heading": "CircleMUD",
+      "subhead": "Unofficial mirror of the CircleMUD engine.",
+      "children": [
+        {
+          "component": "ui/TweetButton",
+          "text": "CircleMUD: Unofficial mirror of the CircleMUD engine.",
+          "url": "http://circlemud.org"
+        },
+        {
+          "component": "ui/GithubButton",
+          "user": "caffo",
+          "repo": "CircleMUD"
+        }
+      ]
+    },
+    {
+      "component": "article",
+      "metadata": {
+        "source": "github.readme"
+      },
+      "html": "<h1>OSX compatible CircleMUD</h1>\n<p>This fork is supposed to always properly compile under OSX. It was latest tested in MacOS Sierra. From root directory, run:</p>\n<pre>$ <span class=\"hljs-keyword\">compile</span>; cd src; <span class=\"hljs-built_in\">make</span>;</pre><p>To start the server, run:</p>\n<pre>$ bin/<span class=\"hljs-built_in\">circle</span></pre><p>And then connect to the server by:</p>\n<pre>telnet localhost <span class=\"hljs-number\">4000</span></pre><p>The first character you create will be a superuser.</p>\n"
+    },
+    {
+      "component": "footer",
+      "links": [
+        {
+          "href": "https://github.com/caffo/CircleMUD",
+          "text": "GitHub"
+        },
+        {
+          "href": "https://github.com/caffo",
+          "text": "caffo"
+        }
+      ]
+    }
+  ]
+}
